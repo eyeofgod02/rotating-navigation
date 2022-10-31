@@ -14,7 +14,7 @@ body {
 
 .circle-container {
     z-index: 2;
-    position: absolute;
+    position: fixed;
     top: -75px;
     left: -75px;
 }
@@ -150,7 +150,7 @@ p {
 
 nav {
     z-index: -1;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 10px;
 }
