@@ -1,0 +1,168 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    z-index: -2;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: rgb(236, 236, 236);
+    background-color: rgb(77, 77, 77);
+    overflow: hidden;
+}
+
+.circle-container {
+    z-index: 2;
+    position: absolute;
+    top: -75px;
+    left: -75px;
+}
+
+.circle {
+    transition: 0.2s;
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(211, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.rotate-circle {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    top: 37px;
+    left: 37px;
+}
+
+#open {
+    cursor: pointer;
+    position: absolute;
+    top: 93px;
+    left: 93px;
+}
+
+.button {
+    z-index: 999;
+}
+
+.wrapper {
+    z-index: 1;
+    transform-origin: top left;
+    padding: 0 25px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.divider {
+    margin: 20px;
+    width: 30vw;
+    height: 1px;
+    background-color: rgb(236, 236, 236);
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-weight: 200;
+    flex: 0 0 auto;
+    padding: 18px;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 500px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 20px;
+}
+
+.date-of-birth {
+    font-weight: 300;
+    padding: 5px 0 10px;
+    color: rgb(170, 170, 170);
+    font-style: italic;
+}
+
+.image-container {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-signature {
+    font-style: italic;
+    padding: 5px;
+    color:rgb(170, 170, 170);
+}
+
+.show-nav {
+    transform: rotate(-17deg);
+    -webkit-transform: rotate(-17deg);
+    -moz-transform: rotate(-17deg);
+    -ms-transform: rotate(-17deg);
+    -o-transform: rotate(-17deg);
+}
+
+nav {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+nav ul li {
+    padding: 5px 0;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 437px) {
+    .wrapper {
+        padding-top: 50px;
+    }
+}
